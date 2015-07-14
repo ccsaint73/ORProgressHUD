@@ -21,6 +21,8 @@
 		BC1B647B1B54EB37001184F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC1B645D1B54EB37001184F7 /* UIKit.framework */; };
 		BC1B64831B54EB37001184F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC1B64811B54EB37001184F7 /* InfoPlist.strings */; };
 		BC1B64851B54EB37001184F7 /* ORProgressHUDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1B64841B54EB37001184F7 /* ORProgressHUDTests.m */; };
+		BC1B64911B54EB7F001184F7 /* ORProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1B64901B54EB7F001184F7 /* ORProgressHUD.m */; };
+		BC1B64931B54EF2F001184F7 /* ORProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BC1B64921B54EF2F001184F7 /* ORProgressHUD.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		BC1B64801B54EB37001184F7 /* ORProgressHUDTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ORProgressHUDTests-Info.plist"; sourceTree = "<group>"; };
 		BC1B64821B54EB37001184F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BC1B64841B54EB37001184F7 /* ORProgressHUDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORProgressHUDTests.m; sourceTree = "<group>"; };
+		BC1B648F1B54EB7F001184F7 /* ORProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORProgressHUD.h; sourceTree = "<group>"; };
+		BC1B64901B54EB7F001184F7 /* ORProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORProgressHUD.m; sourceTree = "<group>"; };
+		BC1B64921B54EF2F001184F7 /* ORProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ORProgressHUD.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,12 +117,7 @@
 		BC1B645F1B54EB37001184F7 /* ORProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				BC1B64681B54EB37001184F7 /* ORAppDelegate.h */,
-				BC1B64691B54EB37001184F7 /* ORAppDelegate.m */,
-				BC1B646B1B54EB37001184F7 /* Main.storyboard */,
-				BC1B646E1B54EB37001184F7 /* ORViewController.h */,
-				BC1B646F1B54EB37001184F7 /* ORViewController.m */,
-				BC1B64711B54EB37001184F7 /* Images.xcassets */,
+				BC1B648E1B54EB6F001184F7 /* ORProgressHUD */,
 				BC1B64601B54EB37001184F7 /* Supporting Files */,
 			);
 			path = ORProgressHUD;
@@ -126,6 +126,12 @@
 		BC1B64601B54EB37001184F7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BC1B64681B54EB37001184F7 /* ORAppDelegate.h */,
+				BC1B64691B54EB37001184F7 /* ORAppDelegate.m */,
+				BC1B646B1B54EB37001184F7 /* Main.storyboard */,
+				BC1B646E1B54EB37001184F7 /* ORViewController.h */,
+				BC1B646F1B54EB37001184F7 /* ORViewController.m */,
+				BC1B64711B54EB37001184F7 /* Images.xcassets */,
 				BC1B64611B54EB37001184F7 /* ORProgressHUD-Info.plist */,
 				BC1B64621B54EB37001184F7 /* InfoPlist.strings */,
 				BC1B64651B54EB37001184F7 /* main.m */,
@@ -150,6 +156,16 @@
 				BC1B64811B54EB37001184F7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC1B648E1B54EB6F001184F7 /* ORProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				BC1B648F1B54EB7F001184F7 /* ORProgressHUD.h */,
+				BC1B64901B54EB7F001184F7 /* ORProgressHUD.m */,
+				BC1B64921B54EF2F001184F7 /* ORProgressHUD.bundle */,
+			);
+			path = ORProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +248,7 @@
 				BC1B64721B54EB37001184F7 /* Images.xcassets in Resources */,
 				BC1B64641B54EB37001184F7 /* InfoPlist.strings in Resources */,
 				BC1B646D1B54EB37001184F7 /* Main.storyboard in Resources */,
+				BC1B64931B54EF2F001184F7 /* ORProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC1B64661B54EB37001184F7 /* main.m in Sources */,
+				BC1B64911B54EB7F001184F7 /* ORProgressHUD.m in Sources */,
 				BC1B646A1B54EB37001184F7 /* ORAppDelegate.m in Sources */,
 				BC1B64701B54EB37001184F7 /* ORViewController.m in Sources */,
 			);

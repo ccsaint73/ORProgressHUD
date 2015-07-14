@@ -7,6 +7,7 @@
 //
 
 #import "ORViewController.h"
+#import "ORProgressHUD.h"
 
 @interface ORViewController ()
 
@@ -14,16 +15,13 @@
 
 @implementation ORViewController
 
-- (void)viewDidLoad
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    //[ORProgressHUD showMessage:@"正在加载"];
+    
+    [ORProgressHUD showCountdownWith:10 failure:^{
+        [ORProgressHUD hide];
+    }];
 }
 
 @end
